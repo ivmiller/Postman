@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "b3fab576-537a-4007-b524-8a621dd4dadb",
+		"name": "Pet_Store_Miller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17471676"
+	},
+	"item": [
+		{
+			"name": "01_post777",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\": 777,\r\n   \"category\": {\r\n     \"id\": 2,\r\n     \"name\": \"cat2\"\r\n   },\r\n   \"name\": \"White Cat\",\r\n   \"tags\": [\r\n        {\r\n           \"id\": 600,\r\n           \"name\": \"kitten\"\r\n         }\r\n   ],\r\n   \"status\": \"available\"\r\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02_post778",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\": 778,\r\n   \"category\": {\r\n     \"id\": 1210,\r\n     \"name\": \"cat1210\"\r\n   },\r\n   \"name\": \"Grey Cat\",\r\n   \"tags\": [\r\n        {\r\n           \"id\": 1210,\r\n           \"name\": \"1210name\"\r\n         }\r\n   ],\r\n   \"status\": \"available\"\r\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03_get777",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/777",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"777"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04_get778",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/778",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"778"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05_put777",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"id\": 777,\r\n   \"category\": {\r\n     \"id\": 2,\r\n     \"name\": \"cat2\"\r\n   },\r\n   \"name\": \"White Cat\",\r\n   \"tags\": [\r\n        {\r\n           \"id\": 777,\r\n           \"name\": \"cat\"\r\n         }\r\n   ],\r\n   \"status\": \"sold\"\r\n}"
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "06_delete777",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/777",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"777"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
